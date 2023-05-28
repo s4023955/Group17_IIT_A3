@@ -4,6 +4,23 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1">
 <title>Assignment 3</title>
     <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 table, th, td {
   border:1px solid black;
 }
@@ -33,7 +50,14 @@ table, th, td {
 <body>
 
 <h1><strong>Project AI Chatbot for Mathematical - Group 17</strong></h1>
-<img src="https://media.discordapp.net/attachments/1110178545889722398/1112403424412176565/sms-chatbots-thumbnail.png" alt="topimage1" width = 50%>
+<div class="row">
+  <div class="column">
+    <img src="https://media.discordapp.net/attachments/1110178545889722398/1112403424412176565/sms-chatbots-thumbnail.png" alt="aiimage1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://media.discordapp.net/attachments/1110178545889722398/1112403424705773769/Chatbot.png?width=1059&height=671" alt="aiimage2" style="width:100%">
+  </div>
+</div>
 <h1>Team Profile</h1>
 <p>The groups official name is Young Sheep (might change after group meeting)</p>
 
@@ -239,7 +263,7 @@ Besides, we will make our chatbot be able to assisting in homework and test prep
 </p>
 
 <h4><strong>Timeframe</strong></h4>
-<img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.15752-9/350114241_233173312747315_7841149104201720169_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=R6jqvHUD7s0AX82yF6s&_nc_ht=scontent-xsp1-3.xx&oh=03_AdRPfSLHh2ise7McKmAHrrb1_0OXJVKJ01mZGdS90fAoSQ&oe=649AEADD" alt="image1" width = 100%>
+<img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.15752-9/350114241_233173312747315_7841149104201720169_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=R6jqvHUD7s0AX82yF6s&_nc_ht=scontent-xsp1-3.xx&oh=03_AdRPfSLHh2ise7McKmAHrrb1_0OXJVKJ01mZGdS90fAoSQ&oe=649AEADD" alt="image1" >
 <table style="width:100%">
   <tr>
     <th>Project's stages</th>
@@ -255,17 +279,6 @@ Besides, we will make our chatbot be able to assisting in homework and test prep
         -Create a detailed and flexible project plan, outlining milestones and deliverables. <br>
     </td>
     <td>2-3 months</td>
-  </tr>
-    <tr>
-    <td>RESEARCH AND PLANNING</td>
-    <td>
-        -Conduct extensive research on existing mathematical chatbots and relevant technologies. <br>
-        -Identify the target audience, their specific needs, and any unique challenges to address. <br>
-        -Define the comprehensive set of features and functionalities for the chatbot. <br>
-        -Create a detailed and flexible project plan, outlining milestones and deliverables. <br>
-    </td>
-    <td>2-3 months</td>
-  </tr>
     <tr>
     <td>DESIGN AND ARCHITECTURE </td>
     <td>
@@ -380,6 +393,35 @@ Besides, we will make our chatbot be able to assisting in homework and test prep
 
             5. Collaboration and Version Control: Knowledge of collaboration tools like Git and familiarity with version control systems enable effective collaboration with other team members and ensure smooth code management. <br>
         </p>
+<h4>Back-end coder:</h4>
+    <p>
+        When building the back-end of a mathematical chatbot, you will need a back-end developer or a team of developers with expertise in server-side programming and web application development. Here are some key skills and technologies that a back-end coder for a mathematical chatbot should be familiar with:
+    </p>
+        <p>
+            1. Programming Languages: <br>
+                - Python: Python is a popular language for building the back-end of chatbot applications due to its simplicity, extensive libraries, and strong support for mathematical computations.<br>
+                - Node.js: Node.js is a JavaScript runtime that allows you to build scalable and efficient server-side applications. It can be used with frameworks like Express.js or Nest.js for building the back-end of a chatbot.<br>
+
+            2. Web Frameworks: <br>
+                - Flask: Flask is a lightweight and flexible web framework for Python. It is commonly used for building APIs and web applications, making it suitable for the back-end of a chatbot.<br>
+                - Django: Django is a high-level Python web framework that provides a robust set of tools and features for building complex web applications. It offers built-in authentication, database management, and scalability options.<br>
+
+            3. API Development: <br>
+                - RESTful APIs: Representational State Transfer (REST) APIs are commonly used to develop chatbot back-ends. Understanding REST principles and best practices for designing and implementing APIs is important.<br>
+                - GraphQL: GraphQL is an alternative to REST APIs that allows for more efficient and flexible data retrieval. Familiarity with GraphQL can be beneficial if you choose to use it for your chatbot's API.<br>
+
+            4. Database Management: <br>
+                - SQL (e.g., PostgreSQL, MySQL): Knowledge of SQL and experience with relational databases is important for storing and retrieving data related to user interactions, chat histories, and any other relevant information.<br>
+                - NoSQL (e.g., MongoDB, Firebase): Understanding NoSQL databases can be useful if you prefer a more flexible and scalable data storage approach for your chatbot.<br>
+
+            5. Mathematical Libraries: <br>
+                - SymPy: SymPy is a Python library for symbolic mathematics. It provides various mathematical functions, equation solving capabilities, differentiation, integration, and more.<br>
+                - NumPy: NumPy is a powerful library for numerical computing in Python. It offers efficient array and matrix operations, mathematical functions, and tools for linear algebra.<br>
+
+            6. Chatbot Integration: <br>
+                - Dialogflow API: Integrating with Dialogflow API allows you to leverage its natural language understanding capabilities and handle user inputs in a conversational manner.<br>
+                - Custom NLP: If you prefer a custom NLP approach, you may need to develop or integrate a natural language processing system to interpret and understand user queries.<br>
+        </p>
 <h4>Testing/debugging:</h4>
     <p>This position will ensure the functionality, accuracy, and reliability of the chatbot. Here is the breakdown for both part:</p>
     <p>
@@ -397,7 +439,20 @@ Besides, we will make our chatbot be able to assisting in homework and test prep
                 Testing Support: Collaborate with testers to reproduce reported issues, conduct additional testing, or provide necessary tools for testing purposes. They work closely with the testing team to verify the fixes and ensure that the chatbot functions as intended.
     </p>
      <p>Overall, Testing requires to know and good at many testing techniques, understanding domain knowledge. In the other side, knowledge over many programming languages, familiar with debugging tools, have Analytical Skills is essential for Debugging. Problem-Solving Skills, Communication Skills are required for both part and this job may need one more people to assist.</p>
-
+<h4>Marketing: </h4>
+    <p>
+        We are seeking a skilled and creative Marketing Specialist to join our dynamic team and promote our math chat bot to schools, educational institutions, and individual users.
+Job Responsibilities:
+    </p>
+    <p>
+        1. Develop Marketing Strategies: You will be responsible for developing comprehensive marketing strategies to promote our math chatbot. This includes identifying target markets, conducting market research, and analyzing competitor activities to position our product effectively. <br>
+        2. Content Creation: Collaborate with the content team to create engaging and compelling marketing content, such as blog posts, social media updates, email campaigns, and website copy. Leverage your understanding of mathematics and education to articulate the benefits and features of our math chatbot.<br>
+        3. Digital Marketing Campaigns: Plan and execute digital marketing campaigns across various channels, including social media platforms, search engines, and email marketing. Optimize campaigns to increase brand visibility, generate leads, and drive conversions.<br>
+        4. Branding and Positioning: Work closely with the design team to develop and maintain a strong brand identity for our math chatbot. Ensure consistent messaging and visual representation across all marketing channels and materials.<br>
+        5. Market Research and Analysis: Conduct market research to identify trends, customer preferences, and opportunities for growth. Analyze data to gain insights into user behavior, demographics, and engagement metrics, using these insights to refinement.<br>
+        6. Performance Tracking and Reporting: Monitor key performance indicators (KPIs) for marketing campaigns and initiatives. Generate regular reports to evaluate the effectiveness of marketing efforts and provide actionable recommendations for improvement.<br>
+    </p>
+<img src="https://media.discordapp.net/attachments/1110178545889722398/1112403424953245706/ai-chatbot-online-1.png" alt="AIbotPosition" width="100%">
 <h1>Group Reflection</h1>
 <p>
     Tuan Nguyen: <br>
@@ -418,6 +473,14 @@ This first semester in RMIT has been a new chapter for me, as myself have found 
     When problems arose within the task, team members of our group did not hesitate to help each other out. By having a transparent communication medium and a clear schedule on when the due dates, everyone was clear on the task they were supposed to do, so no conflicts arose. Everyone was assigned a task according to their strength which resulted in team members confidently achieving the goal they had set for themselves.
     By working as a group, team members can help fill out the weaknesses of one another at the same time improving each other communication skills.
 </p>
+<p>
+    Chuong Dinh: <br>
+    Nothing much to say about myself right now. When I looked back at my progress throughout this course, I think I performed okay, especially the first time I am keeping track
+    of the progress and manage the parts of other members. However, in the demonstration on Wednesday this week, I did poorly because my preparation was not clear enough,
+    which rarely happened for me thus I need to improve my ability to do so even without scripts. Beside those weak points, everything went well without any major problems
+    at all. One thing I’m amazed about this semester is to have teammates studying abroad and showing me useful tips & tricks that I've never heard of. During thetime I’ve
+    been here, I’ve learned how to manage stuff, thinking in many ways and using support tools like ChatGPT to assist me for work.
+</p>
 <h4><strong>Group Reflection (overall)</strong></h4>
 <p>
     As a group, we are proud of our collective efforts and the outcome of this assignment. We fostered a collaborative environment that encouraged active participation and the sharing of ideas. Our regular meetings and effective communication ensured that everyone remained informed and engaged throughout the project. We were able to distribute tasks effectively and leverage each member's strengths, leading to a well-rounded and comprehensive final result. <br>
@@ -430,6 +493,7 @@ This first semester in RMIT has been a new chapter for me, as myself have found 
 
     In conclusion, our group performed well, demonstrating effective communication, collaboration, and timely progress. We have identified areas for improvement, such as time management and research, and plan to implement strategies to address them. We are proud of our achievements and have learned valuable lessons about the power of teamwork and the importance of embracing diversity within groups. <br>
 </p>
+
 <h2><strong>References:</strong></h2>
     <p>
         (1) Conflict Management: Difficult Conversations with Difficult People. (n.d.). Retrieved from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3835442/. <br>
